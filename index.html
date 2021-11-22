@@ -7,8 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new branch</title>
     <style>
-        .a1 {
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .black {
             background-color: black;
+            color: white;
+        }
+
+        .pink {
+            background-color: pink;
+            color: white;
+        }
+
+        .white {
+            background-color: white;
+            color: black;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .purple {
+            background-color: purple;
+            color: white;
+        }
+
+        .cyan {
+            background-color: cyan;
+            color: white;
+        }
+
+        .orange {
+            background-color: orange;
+            color: white;
+        }
+
+        .grey {
+            background-color: grey;
             color: white;
         }
     </style>
@@ -27,10 +67,50 @@
     let btn = document.getElementById('btn');
 
     btn.addEventListener('click', () => {
-        document.body.classList.toggle('a1')
-        // document.body.style.color = 'white';
-        document.body.style.transition = '4s'
+        let a1 = Math.floor(Math.random() * 90);
+        // console.log(a1);
+        if (a1 <= 10) {
+            document.body.classList = '';
+            document.body.classList.toggle('red')
+        }
+        else if (a1 <= 20) {
+            document.body.classList = '';
+            document.body.classList.toggle('black')
+        }
+        else if (a1 <= 30) {
+            document.body.classList = '';
+            document.body.classList.toggle('pink')
+        }
+        else if (a1 <= 40) {
+            document.body.classList = '';
+            document.body.classList.toggle('white')
+        }
+        else if (a1 <= 50) {
+            document.body.classList = '';
+            document.body.classList.toggle('blue')
+        }
+        else if (a1 <= 60) {
+            document.body.classList = '';
+            document.body.classList.toggle('purple')
+        }
+        else if (a1 <= 70) {
+            document.body.classList = '';
+            document.body.classList.toggle('cyan')
+        }
+        else if (a1 <= 80) {
+            document.body.classList = '';
+            document.body.classList.toggle('orange')
+        }
+        else if (a1 <= 90) {
+            document.body.classList = '';
+            document.body.classList.toggle('grey')
+        }
+
+        document.body.style.transition = '3s';
+
     })
+
+
 </script>
 
 </html>
