@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1 {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis saepe quo pariatur perspiciatis expedita
+        delectus facilis, veniam distinctio culpa minus, voluptatibus nobis modi labore amet hic dicta repellendus
+        quaerat qui in dolores ducimus mollitia? Deleniti illo odio consequuntur fugit esse nihil, quas corrupti
+        assumenda illum inventore tenetur quibusdam dicta et reprehenderit nemo accusantium ab, quae saepe aperiam
+        exercitationem! Non dolores voluptatem minima fugiat repellat, laborum est excepturi assumenda hic recusandae?
+    </p>
+    <button id="btn">change</button>
+</body>
+<script>
+    let btn = document.getElementById('btn');
+
+    btn.addEventListener('click', () => {
+        document.body.classList.toggle('a1')
+        // document.body.style.color = 'white';
+        document.body.style.transition = '4s'
+    })
+</script>
+
+</html>
